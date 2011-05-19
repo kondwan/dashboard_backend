@@ -1,0 +1,2 @@
+module HostDataHelper
+end

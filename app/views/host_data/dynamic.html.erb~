@@ -1,0 +1,6 @@
+<html>
+<%= @host_data.description %>
+<body>
+
+</body>
+</html>

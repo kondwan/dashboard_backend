@@ -1,0 +1,12 @@
+<html>
+<%= stylesheet_link_tag 'new' %>
+<%= stylesheet_link_tag 'kho' %>
+
+<h1> 
+
+
+<li><%= @host_data.description %></li>
+
+    
+   </td></tr></table>
+   </html>

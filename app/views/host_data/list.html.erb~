@@ -1,0 +1,8 @@
+<html>
+
+<%= @host_data %>
+
+<body>
+
+</body>
+</html>

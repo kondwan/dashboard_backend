@@ -1,0 +1,113 @@
+
+h1 {
+background-color:#003300;
+height: 50px;
+width: 650px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+color:white;
+}
+
+
+h2 {
+background-color:white;
+height: 20px;
+width: 300px;
+-moz-border-radius: 15px;
+border-radius 15px;
+color:white;
+
+z-index: 8;
+color:red;
+}
+
+
+
+
+
+
+
+
+p5 {
+background-color:black;
+height: 70px;
+width: 160px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+color:white;
+}
+legend {
+background-color:#003300;
+height: 10px;
+width: 1200px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+color:white;
+}
+p3 {
+background-color:#003300;
+height: 200px;
+width: 330px;
+-moz-border-radius: 5px;
+
+color:white;
+}
+td {
+background-color:#003300;
+height: 100px;
+width: 530px;
+-moz-border-radius: 5px;
+
+color:white;
+-moz-border-radius: 35px;
+border-radius: 35px;
+}
+  {
+
+		position: absolute;
+		right: 100px;
+		top: 160px;
+		
+		z-index: 5;
+		background-color:;
+		-moz-border-radius: 39px;
+		
+		width: 140px;
+		height: 40px;
+		border: 5px; solid blue;
+		
+		
+	fieldset {
+
+	background-color:#D8D8D8;
+
+	
+		right: 1px;
+		top: 193px;
+		
+		z-index: 7;
+		-moz-border-radius: 19px;
+		
+
+
+
+
+
+
+	
+form {
+
+	background-color:#D8D8D8;
+
+	
+		right: 1px;
+		top: 193px;
+		
+		z-index: 7;
+		-moz-border-radius: 19px;
+		
+		
+	}
+	
+
+

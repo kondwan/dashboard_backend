@@ -1,0 +1,8 @@
+class Dashboard < ActiveRecord::Base
+  @arr = IO.readlines("/home/meduser/client_data/f.txt")
+  def uploaded_file(arr[0])
+  self.name =
+  self.data  =arr[0].read
+  end
+
+end

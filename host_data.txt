@@ -1,0 +1,21 @@
+__________________________________________________________________________________
+This is the summary of the Computer Information
+__________________________________________________________________________________
+Total Memory                   :2004 MB
+Used  Memory                   :1940 MB
+Free  Memory                   :63 MB
+Shared  Memory                 :0 MB
+Buffered  Memory               :26 MB
+Total Diskpace                 :142 GB
+Used Diskpace                  :86 GB
+Free Diskpace                  :49 GB
+Usage(%) Diskpace              :64 %
+The host name is                renameme
+Wireless IP(address)           :  
+Wired Ip address                
+The host address               127.0.0.1 
+The Mac  address               :
+CPu information                :Intel(R) Pentium(R) Dual  CPU  T2390  @ 1.86GHz 
+___________________________________________________________________________________
+             copyright Baobab Health Trust  2011                     
+___________________________________________________________________________________

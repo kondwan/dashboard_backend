@@ -1,0 +1,8 @@
+require'will_paginate'
+class DashboardController < ApplicationController
+  
+  #exporting file contents to the database
+@host_data = Hostdata.find(:all)
+
+    
+end

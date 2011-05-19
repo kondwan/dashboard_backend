@@ -1,0 +1,67 @@
+<html>
+
+  <head>
+  <%= stylesheet_link_tag "buttons.css" %>
+    <title>
+    </title>
+    </head>
+    
+          <div style="position: absolute; left: 1090px; top: 157px; height: 400px; width:100px; padding 1em;" >
+                  <div class="but "><a href="javascript:alert('Kudashboard')"><b><font color="white" size="5" face="arial">
+                  <center>Dashboard</center></font></b></a></div>
+                  
+                  <div class="but "><a href="javascript:alert('Mahostnames')"><b><font color="white" size="5" face="arial">
+                  <center>Hostnames</center></font></b></a></div>
+                  <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                  <center>Acquire</center></font></b></a></div>
+                  <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                  <center>Update</center></font></b></a></div>
+                  <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                  <center>Records</center></font></b></a></div>
+                  <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                  <center>Statistics</center></font></b></a></div>
+                  <div class="but "><a href="javascript:alert('Tulukani')"><b><font color="white" size="5" face="arial">
+                  <center>Logout</center></font></b></a></div>
+          </div>
+          
+    
+    <br><br><br><br><br><br>
+      <body>
+      
+      
+      
+      <%= form_tag :action =>'create' %>
+      <p><lable for="hostname_hostname">Hostname*</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <%= text_field 'hostname' ,'hostname' %></p>
+      <p><lable for="hostname_mac_address">Mac_address </label>
+      <%= text_field 'hostname' ,'mac_address' %></p>
+      <p><lable for="hostname_ip_address">Ip_address </label>&nbsp;&nbsp;&nbsp;
+      <%= text_field 'hostname' ,'ip_address' %></p>
+      <%= submit_tag "Create "%>
+     
+      
+      </body>
+  </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

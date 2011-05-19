@@ -1,0 +1,2 @@
+class HostdataController < ApplicationController
+end

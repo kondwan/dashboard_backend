@@ -1,0 +1,11 @@
+class Hostnames < ActiveRecord::Migration
+  def self.up
+   t.column :description, :string
+      t.column :corr_value, :string
+    t.timestamps
+  end
+end
+  def self.down
+  drop_table
+  end
+end

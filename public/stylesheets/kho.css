@@ -1,0 +1,25 @@
+ul#categories{
+top:0px;
+width: 670px;
+text-align: center;
+padding: 5px;
+background-color:#ececec;
+border: 1px solid #cccccc;
+margin-bottom: 20px;
+-moz-border-radius: 35px;
+
+
+}
+ul#categories li {
+display: inline;
+padding-left:5px;
+
+}
+ul#category_list {
+padding: 20px;
+list-style-type: square;
+}
+
+ul#category_list li{
+line-height:140%;
+}

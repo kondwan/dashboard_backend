@@ -1,0 +1,39 @@
+<html>
+  <br><br>
+<legend>
+
+<%= stylesheet_link_tag "buttons.css" %>
+
+<br>
+  
+<body>
+   <div style="position: absolute; left: 1090px; top: 157px; height: 400px; width:100px; padding 1em;" >
+            <div class="but "><a href="javascript:alert('Kudashboard')"><b><font color="white" size="5" face="arial">
+            <center>Dashboard</center></font></b></a></div>
+            
+            <div class="but "><a href="javascript:alert('Mahostnames')"><b><font color="white" size="5" face="arial">
+            <center>Hostnames</center></font></b></a></div>
+            <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+            <center>Acquire</center></font></b></a></div>
+            <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+            <center>Update</center></font></b></a></div>
+            <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+            <center>Records</center></font></b></a></div>
+            <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+            <center>Statistics</center></font></b></a></div>
+            <div class="but "><a href="javascript:alert('Tulukani')"><b><font color="white" size="5" face="arial">
+            <center>Logout</center></font></b></a></div>
+    </div>
+   
+<%@host_datas.each do |k| %>
+<br><%= k.Free_memory-%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= k.Load_average -%>
+<%= k.Free_diskspace-%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= k.host_name-%>
+<%= k.Date_updated-%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= k.Date_created -%>
+<%= link_to 'Edit',{:action=>'edit',:controller =>'HostData',:id=>k.id} %><%= link_to 'Delete',{:action=>'delete',:controller =>'host_data',:id =>k.id}, :confirm =>
+    "Are you sure you want to delete this Client?" %>
+<% end %>
+</body>
+
+
+
+</html>
