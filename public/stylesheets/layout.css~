@@ -1,0 +1,55 @@
+h2 {
+position:relative;
+right:230px;
+top:0px;
+font-family:"your typeface",Fontin sans, sans serif;
+color: black;
+width: 100%;
+background: transparent;
+filter: alpha(opacity= 15);
+-moz-opacity: .15;
+opacity: .15;
+
+}
+
+
+h3 {
+position:absolute;
+background-color:green;
+color:white;
+
+-moz-border-radius:10px;
+right:12px;
+top:20px;
+width:360px;
+font-family:"Your type face",Tahoma, sans serif;
+
+
+}
+
+
+th {
+background-color:#006400;
+color:white;
+-moz-border-radius:8px;
+height:9px;
+width:130px;
+font-size:12.5px;
+font-family: "your type face",Tahoma, sans serif;
+
+
+}
+
+td {
+
+background-color:#A0A0A0;
+font-size:12.5px;
+}
+
+
+table {
+background-color:#120;
+-moz-border-radius:10px;
+
+}
+

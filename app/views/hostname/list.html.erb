@@ -1,47 +1,64 @@
 <html>
-<body>
-<%= stylesheet_link_tag "buttons" %>
+    <head>
+      <title>BHSMS
+      </title>
+      <h3>Welcome &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <%= Time.now().strftime("%d %B, %Y") %></h3>
+        <%= stylesheet_link_tag "buttons" %>
+    <%=stylesheet_link_tag"layout1" %>
+    </head>
+   
+    <body>
 
 
 
 
 
 
- <div style="position: absolute; left: 1090px; top: 157px; height: 400px; width:100px; padding 1em;" >
-            <div class="but "><a href="javascript:alert('Kudashboard')"><b><font color="white" size="5" face="arial">
-            <center>Dashboard</center></font></b></a></div>
-            
-            <div class="but "><a href="javascript:alert('Mahostnames')"><b><font color="white" size="5" face="arial">
-            <center>Hostnames</center></font></b></a></div>
-            <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
-            <center>Acquire</center></font></b></a></div>
-            <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
-            <center>Update</center></font></b></a></div>
-            <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
-            <center>Records</center></font></b></a></div>
-            <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
-            <center>Statistics</center></font></b></a></div>
-            <div class="but "><a href="javascript:alert('Tulukani')"><b><font color="white" size="5" face="arial">
-            <center>Logout</center></font></b></a></div>
-    </div>
-    
-    
-    
-    <% if @hostnames.blank? %>
-    <p>These are the Clients available to this machine</P>
-    <% else %>
-    <p>These are the hosts available to this machine </p>
-      <% end %>
-    
-    <br><br><br><br>
-    
-   <%@hostnames.each do |k| %>
-<br><%= link_to k.hostname,{:action =>'index',:controller=>'host_data', :id =>k.id}-%>
-    <%= k.mac_address %> <%= k.ip_address %><%= link_to 'Edit',{:action=>'edit',:controller =>'hostname'} %>
-    <%= link_to 'Delete',{:action=>'delete',:controller =>'hostname',:id => k.id}, :confirm =>
-    "Are you sure you want to delete this Client?" %>
-    <% end %>
+     <div style="position: absolute; left: 1090px; top: 157px; height: 400px; width:100px; padding 1em;" >
+                <div class="but "><a href="javascript:alert('Kudashboard')"><b><font color="white" size="5" face="arial">
+                                   <center>Dashboard</center></font></b></a></div>
+                  <div class="but "><a href="/hostname/list"><b><font color="white" size="5" face="arial">
+                    <center>Hostnames</center></font></b></a></div>
+                      <div class="but "><a href="/host_data/index"><b><font color="white" size="5" face="arial">
+                        <center>View Details</center></font></b></a></div>
+                          <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                          <center>Update</center></font></b></a></div>
+                        <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                      <center>Records</center></font></b></a></div>
+                    <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                  <center>Statistics</center></font></b></a></div>
+                <div class="but "><a href="javascript:alert('Tulukani')"><b><font color="white" size="5" face="arial">
+              <center>Logout</center></font></b></a></div>
+        </div>
+        
+        
+        
+        <% if @hostnames.blank? %>
+        <p><b><i>These are the Clients available to this machine</b></i></P>
+          <% else %>
+            <p><b><i>These are the hosts available to this machine </i></b></p>
+              <% end %>
+        
+      <table>
+        <th>HostName</th>
+          <th>Mac Address</th>
+            <th>Ip Address</th>
+              <th>Edit</th>
+                <th>Delete</th>
+                <tr>
+        
+           <%@hostnames.each do |k| %>
+            <td><br><%= link_to k.hostname,{:action =>'index',:controller=>'host_data', :id =>k.id}-%></td>
+            <td><%= k.mac_address %></td>
+            <td> <%= k.ip_address %></td>
+            <td><%= link_to 'Edit',{:action=>'edit',:controller =>'hostname'} %></td>
+            <td><%= link_to 'Delete',{:action=>'delete',:controller =>'hostname',:id => k.id}, :confirm =>
+            "Are you sure you want to delete this Client?" %></td>
+            <% end %>
+        </tr>
+      </table>
+        <p1><%= link_to "Add New Client", {:action=> 'new',:controller =>'hostname'} %></p1>
+        </legend>
+  </body>
 
-    <p><%= link_to "Add New Client", {:action=> 'new',:controller =>'hostname'} %> </p>
-</body>
 </html>

@@ -1,12 +1,30 @@
 class HostDataController < ApplicationController
-  #searching the records from the database and store them in instance
-  #@host_data
-  def index
-    @host_datas = HostData.find(:all)
-   
-  end
-  #displaying each item from the database
+    #searching the records from the database and store them in instance
+    #@host_data
+    def index
+      @host_datas = HostData.find(:all)
+      
+     
+    end
+    #displaying each item from the database
+    
+    def hostnames
+    end
+    
+    def delete
+      @host_data = HostData.find(params[:id]).destroy
+      redirect_to  :action=>'index'
+    end
+    def refresh
+      @refresh = HostData.upload_data("")
+      redirect_to :action=>'index'
+    end
+    def statistics
   
-  def hostnames
-  end
+      @host_data = HostData.count
+    
+    end
+    
+    
+  
 end

@@ -16,10 +16,22 @@ class HostnameController < ApplicationController
     end
   end
     def edit
+
+      @hostname = Hostname.find(params[:id])
     
     end
+    def update
+     
+      @hostname = Hostname.find(params[:id])
+      if  @hostname.update_attributes(params[:hostname])
+          redirect_to :action=> 'list', :id=> @hostname
+      else
+          @hostnames = Hostname.find(:all)
+          render :action=>'edit'
+      end
+    end
     def delete
-     Hostaname.find(params[:id]).destroy
+     Hostname.find(params[:id]).destroy
      redirect_to :action => 'list'
     end
 end

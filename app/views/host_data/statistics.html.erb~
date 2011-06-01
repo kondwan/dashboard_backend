@@ -1,0 +1,8 @@
+  <html>
+  <body>
+  These are Total  records available for <%@host_datas.each do |k| %>
+  <%= k.Host_name %>
+  <%= @host_data %>
+  </p>
+  </body>
+  </html>

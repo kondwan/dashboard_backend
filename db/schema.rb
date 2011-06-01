@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110406073708) do
+ActiveRecord::Schema.define(:version => 20110531091727) do
 
   create_table "baobab", :force => true do |t|
     t.string "description", :null => false
@@ -39,13 +39,20 @@ ActiveRecord::Schema.define(:version => 20110406073708) do
   end
 
   create_table "host_datas", :force => true do |t|
-    t.string   "Free_memory",                                   :null => false
-    t.decimal  "Free_diskspace", :precision => 10, :scale => 5, :null => false
-    t.integer  "Host_id",                                       :null => false
-    t.decimal  "Load_average",   :precision => 10, :scale => 5, :null => false
-    t.string   "Host_name",                                     :null => false
-    t.datetime "Date_created",                                  :null => false
-    t.datetime "Date_updated",                                  :null => false
+    t.decimal  "Load_average",                  :precision => 10, :scale => 5, :null => false
+    t.datetime "Date_created",                                                 :null => false
+    t.datetime "Date_updated",                                                 :null => false
+    t.integer  "Host_id"
+    t.string   "Host_name"
+    t.string   "Shared_memory"
+    t.string   "Buffered_memory"
+    t.string   "Usage_percent"
+    t.integer  "Total_diskpace",  :limit => 10, :precision => 10, :scale => 0
+    t.integer  "Free_diskpace",   :limit => 10, :precision => 10, :scale => 0
+    t.integer  "Used_diskpace",   :limit => 10, :precision => 10, :scale => 0
+    t.integer  "Used_memory",     :limit => 10, :precision => 10, :scale => 0
+    t.integer  "Free_memory",     :limit => 10, :precision => 10, :scale => 0
+    t.string   "Mac_address"
   end
 
   create_table "host_names", :force => true do |t|
@@ -75,6 +82,11 @@ ActiveRecord::Schema.define(:version => 20110406073708) do
   create_table "softwares", :force => true do |t|
     t.string "description", :null => false
     t.string "corr_valuee", :null => false
+  end
+
+  create_table "statistics", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|

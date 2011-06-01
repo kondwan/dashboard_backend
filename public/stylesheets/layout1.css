@@ -1,0 +1,76 @@
+table {
+position:absolute;
+top:70px;
+
+}
+
+
+
+h2 {
+font-family:"your typeface",Fontin sans, sans serif;
+
+}
+
+
+h3 {
+position:absolute;
+background-color:black;
+color:white;
+
+-moz-border-radius:10px;
+right:30px;
+top:15px;
+width:300px;
+font-size:14px;
+font-family:"Your type face",Tahoma, sans serif;
+
+
+}
+
+
+
+
+th {
+background-color:#006400;
+color:white;
+-moz-border-radius:8px;
+height:10px;
+width:130px;
+font-size:12.5px;
+font-family: "your type face",Tahoma, sans serif;
+
+
+}
+
+td {
+
+background-color:#A0A0A0;
+font-size:12.5px;
+}
+
+
+table {
+background-color:#120;
+-moz-border-radius:10px;
+
+}
+
+p1 {
+position:absolute;
+top:400px;
+font-family:"your typeface",Fontin sans, sans serif;
+-moz-border-radius:10px;
+border-style:outline;
+ }
+p {
+
+font-family:"your typeface",Fontin sans, sans serif;
+}
+legend {
+background-color:black;
+color:white;
+-moz-border-radius:6px;
+font-family:"your font face",Tahoma,sans serif;
+}
+
+

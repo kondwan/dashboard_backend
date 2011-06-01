@@ -1,0 +1,7 @@
+class StatisticsController < ApplicationController
+
+  #counting all the records in the database
+  def statistic
+    
+  end
+end
