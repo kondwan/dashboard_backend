@@ -1,0 +1,2 @@
+This is the dashboard back end application a database that stores information 
+about client machine it acts as a central repository system
