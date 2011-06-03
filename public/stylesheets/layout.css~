@@ -6,26 +6,97 @@ font-family:"your typeface",Fontin sans, sans serif;
 color: black;
 width: 100%;
 background: transparent;
-filter: alpha(opacity= 15);
--moz-opacity: .15;
-opacity: .15;
+filter: alpha(opacity= 25);
+-moz-opacity: .25;
+opacity: .25;
+
+}
+h4 {
+position:relative;
+left:140px;
+top:20px;
+font-size:30px;
+font-family:"your typeface",Fontin sans, sans serif;
+color: white;
+width: 100%;
+background: transparent;
+background-color:#199;
+width:960px;
+-moz-border-radius:7px;
+text-shadow: 6px  4px 1px black;
 
 }
 
 
 h3 {
 position:absolute;
-background-color:green;
+background-color:black;
 color:white;
 
 -moz-border-radius:10px;
-right:12px;
-top:20px;
-width:360px;
+right:30px;
+top:15px;
+width:300px;
+font-size:14px;
 font-family:"Your type face",Tahoma, sans serif;
+display:block;
+border-top-color:#280000;
+border-width:34px;
+
+}
+h5 {
+position:absolute;
+background-color:#199;
+color:white;
+
+-moz-border-radius:7px;
+right:40px;
+top:22px;
+width:300px;
+font-size:14px;
+font-family:"Your type face",Tahoma, sans serif;
+display:block;
+border-top-color:#280000;
+border-width:34px;
 
 
 }
+h6 {
+height:487px;
+width:1216px;
+position:absolute;
+background-color:white;
+color:black;
+
+-moz-border-radius:10px;
+right:27px;
+top:4px;
+
+font-size:14px;
+font-family:"Your type face",Tahoma, sans serif;
+display:block;
+border-top-color:#280000;
+border-width:34px;
+
+}
+h8 {
+height:500px;
+position:absolute;
+background-color:#480000;
+color:black;
+
+-moz-border-radius:15px;
+right:20px;
+top:30px;
+width:1230px;
+font-size:14px;
+font-family:"Your type face",Tahoma, sans serif;
+display:block;
+border-top-color:#280000;
+border-width:34px;
+
+}
+
 
 
 th {
@@ -50,6 +121,6 @@ font-size:12.5px;
 table {
 background-color:#120;
 -moz-border-radius:10px;
-
+width:1100px;
 }
 

@@ -80,7 +80,7 @@ class HostData < ActiveRecord::Base
       :Host_name=>host_name,
       :Usage_percent => usage_percent,
       :Date_updated=> Time.now,
-      :Date_created=>Date.today
+      :Date_created=> Date.today
      
     )
     host_data.save

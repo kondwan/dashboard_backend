@@ -1,6 +1,7 @@
 table {
 position:absolute;
 top:70px;
+width:800px;
 
 }
 
@@ -23,6 +24,7 @@ top:15px;
 width:300px;
 font-size:14px;
 font-family:"Your type face",Tahoma, sans serif;
+display:block;
 
 
 }
@@ -73,8 +75,4 @@ color:white;
 font-family:"your font face",Tahoma,sans serif;
 }
 
-p1 {
-position:absolute;
-top:300px;
-background-color:red;
-}
+

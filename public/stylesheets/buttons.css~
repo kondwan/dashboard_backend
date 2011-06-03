@@ -1,5 +1,5 @@
 .but{padding:0px;width:8em}
-      .but a{-moz-border-radius:15px; height:31px; width:150px;
+      .but a{display:block;text-decoration:none;color:black;background-color:#006400;-moz-border-radius:15px; height:27px; width:130px;
             border:3px outset #A67700;border-bottom-color:#6E3C00;border-top-color:#6E3C00;
             }
       

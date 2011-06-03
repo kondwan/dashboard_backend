@@ -1,9 +1,80 @@
-  <html>
+  <html>  
+  
+    <head>
+      <title>statistics
+      </title> 
+      <%= stylesheet_link_tag"buttons" %> 
+      <%= stylesheet_link_tag"layout" %>
+    </head>
+    
+    
+    
+    
   <body>
-  These are Total  records available for <%@host_datas.each do |k| %>
-  <%= k.Host_name %>
-  <% end %>
-  <%= @host_data %>
-  </p>
+   <p><h3>Today is:
+   <script language="javascript" type="text/javascript">
+   for (i=1; i<3; i++)
+   {
+   document.write(""+""+"&nbsp;") 
+   }
+   </script>
+   <%= Time.now().strftime("%A,%B,%d,%Y") %></h3></p>
+   
+   <script language="javascript" type="text/javascript">
+   for (i=1; i<3; i++ )
+   {
+   document.write(""+""+"<br/>")
+   }
+   </script>
+   <legend>
+   <p>These are Total  records available for <b><%= @host_data %></b></p>
+   
+   <p>Items Created This Week 
+   <script language="javascript" type="text/javascript">
+   for(i=1; i<10; i++)
+   {
+   document.write(""+""+"&nbsp;&nbsp;")
+   }
+   </script>
+   
+   <b><%= @host.count %></b></p>
+   
+   
+   
+   <!----
+   menu is below
+   !-->
+     <div style="position: absolute; left: 1120px; top: 68px; height: 400px; width:90px; padding 1em;" >
+            <div class="but "><a href="/host_data/dashboard"><b><font color="white" size="4" face="arial">
+            <center>Dashboard</center></font></b></a></div>
+            
+            <div class="but "><a href="/host_data/index"><b><font color="white" size="4" face="arial">
+            <center>Acquire Data</center></font></b></a></div>
+            
+            <div class="but "><a href="/hostname/list"><b><font color="white" size="4" face="arial">
+            <center>Hostnames</center></font></b></a></div>
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="but "><a href="javascript:alert('taipezeni"><b><font color="white" size="4" face="arial">
+            <center>Update</center></font></b></a></div>
+            <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="4" face="arial">
+            <center>Records</center></font></b></a></div>
+            <div class="but "><a href="/host_data/statistics"><b><font color="white" size="4" face="arial">
+            <center>Statistics</center></font></b></a></div>
+            <div class="but "><a href="/host_data/statistics"><b><font color="white" size="4" face="arial">
+            <center>Todays Data</center></font></b></a></div>
+            <div class="but "><a href="javascript:alert('Tulukani')"><b><font color="white" size="4" face="arial">
+            <center>Logout</center></font></b></a></div>
+          
+    </div>
+  
+    
+  </legend>
   </body>
   </html>

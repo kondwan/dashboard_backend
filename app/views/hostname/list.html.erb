@@ -14,21 +14,22 @@
 
 
 
-     <div style="position: absolute; left: 1090px; top: 157px; height: 400px; width:100px; padding 1em;" >
-                <div class="but "><a href="javascript:alert('Kudashboard')"><b><font color="white" size="5" face="arial">
+     <div style="position: absolute; left: 1120px; top: 68px; height: 400px; width:90px; padding 1em;" >
+                <div class="but "><a href="/host_data/dashboard"><b><font color="white" size="4" face="arial">
                                    <center>Dashboard</center></font></b></a></div>
-                  <div class="but "><a href="/hostname/list"><b><font color="white" size="5" face="arial">
+                  <div class="but "><a href="/hostname/list"><b><font color="white" size="4" face="arial">
                     <center>Hostnames</center></font></b></a></div>
-                      <div class="but "><a href="/host_data/index"><b><font color="white" size="5" face="arial">
+                      <div class="but "><a href="/host_data/index"><b><font color="white" size="4" face="arial">
                         <center>View Details</center></font></b></a></div>
-                          <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                          <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="4" face="arial">
                           <center>Update</center></font></b></a></div>
-                        <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                        <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="4" face="arial">
                       <center>Records</center></font></b></a></div>
-                    <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                    <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="4" face="arial">
                   <center>Statistics</center></font></b></a></div>
-                <div class="but "><a href="javascript:alert('Tulukani')"><b><font color="white" size="5" face="arial">
+                <div class="but "><a href="javascript:alert('Tulukani')"><b><font color="white" size="4" face="arial">
               <center>Logout</center></font></b></a></div>
+              
         </div>
         
         
@@ -40,15 +41,20 @@
               <% end %>
         
       <table>
+      
         <th>HostName</th>
+        <th>Host ID</th>
           <th>Mac Address</th>
             <th>Ip Address</th>
               <th>Edit</th>
                 <th>Delete</th>
-                <tr>
+               
         
-           <%@hostnames.each do |k| %>
+           <%@hostnames.each do |k| %> <tr>
+           
             <td><br><%= link_to k.hostname,{:action =>'index',:controller=>'host_data', :id =>k.id}-%></td>
+            <td><%= k.id %></td>
+            <td><%= k.hostid %></td>
             <td><%= k.mac_address %></td>
             <td> <%= k.ip_address %></td>
             <td><%= link_to 'Edit',{:action=>'edit',:controller =>'hostname'} %></td>

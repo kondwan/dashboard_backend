@@ -1,6 +1,7 @@
 table {
 position:absolute;
 top:70px;
+width:800px;
 
 }
 
@@ -14,7 +15,7 @@ font-family:"your typeface",Fontin sans, sans serif;
 
 h3 {
 position:absolute;
-background-color:black;
+background-color:#199;
 color:white;
 
 -moz-border-radius:10px;
@@ -23,6 +24,7 @@ top:15px;
 width:300px;
 font-size:14px;
 font-family:"Your type face",Tahoma, sans serif;
+display:block;
 
 
 }

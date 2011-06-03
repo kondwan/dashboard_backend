@@ -1,0 +1,44 @@
+<html>
+          <head>
+          <title>
+          dashboard
+          </title>
+          <%= stylesheet_link_tag"buttons"%>
+           <%= stylesheet_link_tag"layout"%>
+           <h7><font color="white">.</font></h7>
+            <h8><font color="#380000">.</font></h8>
+          <h6>
+          <h4><font-size="8"><center>Baobab Health Trust Servers Monitoring System</center></font></h4>    
+        </h6><h5><i>Welcome</i>&nbsp;&nbsp;<%= Time.now().strftime("%A %B,,%d,%Y")%></h5>
+          </head>
+
+  <body>
+
+
+
+            <div style="position: absolute; left: 125px; top: 160px; height: 300px; width:1000px; padding 1em; background-color:#199; -moz-border-radius:10px;" >
+                <div class="but "><a href="javascript:alert('Kudashboard')"><b><font color="white" size="4" face="arial">
+                                   <center>Adminstration</center></font></b></a></div>
+                  <div class="but "><a href="/hostname/list"><b><font color="white" size="4" face="arial">
+                    <center>Hostnames</center></font></b></a></div>
+                      <div class="but "><a href="/host_data/index"><b><font color="white" size="4" face="arial">
+                        <center>Data Captured</center></font></b></a></div>
+                          <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="4" face="arial">
+                          <center>Update</center></font></b></a></div>
+                        <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="4" face="arial">
+                      <center>Records</center></font></b></a></div>
+                    <div class="but "><a href="/host_data/statistics"><b><font color="white" size="4" face="arial">
+                  <center>Statistics</center></font></b></a></div>
+                <div class="but "><a href="javascript:alert('Tulukani')"><b><font color="white" size="4" face="arial">
+              <center>Static Data</center></font></b></a></div>
+              <div class="but "><a href="javascript:alert('Tulukani')"><b><font color="white" size="4" face="arial">
+              <center>Dynamic Data</center></font></b></a></div>
+             <div class="but "><a href="javascript:alert('Tulukani')"><b><font color="white" size="4" face="arial">
+            <center>Settings</center></font></b></a></div>
+              
+              
+        </div>
+        
+        
+ </body>
+ </html>

@@ -18,7 +18,7 @@
     
     
    <script language="JavaScript" type="text/javascript">
-      for (i=1;i<6;i++) {
+      for (i=1;i<3;i++) {
       document.write(" " +"" + "<br>");
       }
 </script>
@@ -27,19 +27,19 @@
 
     <legend>Register New Host
     
-          <div style="position: absolute; left: 1090px; top: 157px; height: 400px; width:100px; padding 1em;" >
-                  <div class="but "><a href="javascript:alert('Kudashboard')"><b><font color="white" size="5" face="arial">
+          <div style="position: absolute; left: 1120px; top: 68px; height: 400px; width:90px; padding 1em;" >
+                  <div class="but "><a href="/host_data/dashboard"><b><font color="white" size="4" face="arial">
                   <center>Dashboard</center></font></b></a></div>
                   
-                  <div class="but "><a href="/hostname/list"><b><font color="white" size="5" face="arial">
+                  <div class="but "><a href="/hostname/list"><b><font color="white" size="4" face="arial">
                   <center>Hostnames</center></font></b></a></div>
-                  <div class="but "><a href="/host_data/index"><b><font color="white" size="5" face="arial">
+                  <div class="but "><a href="/host_data/index"><b><font color="white" size="4" face="arial">
                   <center>View details</center></font></b></a></div>
-                  <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                  <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="4" face="arial">
                   <center>Update</center></font></b></a></div>
-                  <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                  <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="4" face="arial">
                   <center>Records</center></font></b></a></div>
-                  <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="5" face="arial">
+                  <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="4" face="arial">
                   <center>Statistics</center></font></b></a></div>
                  
           </div>
@@ -49,10 +49,12 @@
       <body>
       
       
-      <p1>
+     
       <%= form_tag :action =>'create' %>
       <p><lable for="hostname_hostname">Hostname*</label>&nbsp;&nbsp;&nbsp;&nbsp;
       <%= text_field 'hostname' ,'hostname' %></p>
+      <p><lable for="hostname_hostid">HostID:&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <%= text_field 'hostname' ,'hostid' %></p>
       <p><lable for="hostname_mac_address">Mac_address </label>
       <%= text_field 'hostname' ,'mac_address' %></p>
       <p><lable for="hostname_ip_address">Ip_address </label>&nbsp;&nbsp;&nbsp;

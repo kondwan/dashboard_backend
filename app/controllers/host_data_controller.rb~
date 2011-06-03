@@ -22,6 +22,16 @@ class HostDataController < ApplicationController
     def statistics
   
       @host_data = HostData.count
+       @host_datas = HostData.find(:all, :conditions=>{:Date_created =>(Date.today)..(Date.today + 1.week)})
+    
+    end
+    def recent
+      @recent = HostData.find(params[:id])
+      redirect_to :action=>'recent'
+    end
+    def perweek
+      
+
     
     end
     
