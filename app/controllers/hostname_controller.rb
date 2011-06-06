@@ -1,5 +1,13 @@
 class HostnameController < ApplicationController
 
+  
+  def index
+      @host_datas = HostData.find(:all)
+      
+     
+    end
+    
+  
   def list
     @hostnames = Hostname.find(:all)
   end
@@ -16,15 +24,15 @@ class HostnameController < ApplicationController
     end
   end
     def edit
-
+      
       @hostname = Hostname.find(params[:id])
     
     end
     def update
      
-      @hostname = Hostname.find(params[:id])
+      @hostname = Hostname.find(:all)
       if  @hostname.update_attributes(params[:hostname])
-          redirect_to :action=> 'list', :id=> @hostname
+          redirect_to :action=> 'show', :id=> @hostname
       else
          
           render :action=>'edit'

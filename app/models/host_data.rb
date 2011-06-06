@@ -1,4 +1,5 @@
 class HostData < ActiveRecord::Base
+has_many :hostnames
   #extracting data from a text file
   
   def self.upload_data(host_data)

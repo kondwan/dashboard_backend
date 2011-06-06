@@ -11,35 +11,44 @@
     
     
   <body>
-   <p><h3>Today is:
+   <p><h5>Today is:
    <script language="javascript" type="text/javascript">
    for (i=1; i<3; i++)
    {
    document.write(""+""+"&nbsp;") 
    }
    </script>
-   <%= Time.now().strftime("%A,%B,%d,%Y") %></h3></p>
+   <%= Time.now().strftime("%A,%B,%d,%Y") %></h5></p>
    
    <script language="javascript" type="text/javascript">
-   for (i=1; i<3; i++ )
+   for (i=1; i<4; i++ )
    {
    document.write(""+""+"<br/>")
    }
    </script>
-   <legend>
-   <p>These are Total  records available for <b><%= @host_data %></b></p>
-   
-   <p>Items Created This Week 
-   <script language="javascript" type="text/javascript">
-   for(i=1; i<10; i++)
-   {
-   document.write(""+""+"&nbsp;&nbsp;")
-   }
-   </script>
-   
-   <b><%= @host.count %></b></p>
    
    
+   <table width="100">
+    <th>Total Hosts</th>
+    <th>Created Today</th>
+    <th>Last Updated</th>
+   <tr> 
+   <td>
+    <b><%= @host_data %></b>
+   
+   </td>
+   
+   
+   <td><b><%= @host.count %></b></td>
+   
+   
+   
+ 
+   
+   <td><b><%= link_to @last_update.Host_name,{:action=>'recent', :id=>id} %></b></td>
+   
+   </tr>
+   </table>
    
    <!----
    menu is below
@@ -49,7 +58,7 @@
             <center>Dashboard</center></font></b></a></div>
             
             <div class="but "><a href="/host_data/index"><b><font color="white" size="4" face="arial">
-            <center>Acquire Data</center></font></b></a></div>
+            <center>View Records</center></font></b></a></div>
             
             <div class="but "><a href="/hostname/list"><b><font color="white" size="4" face="arial">
             <center>Hostnames</center></font></b></a></div>

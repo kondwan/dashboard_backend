@@ -1,4 +1,4 @@
 class Hostname < ActiveRecord::Base
 
-belongs_to :host_data
+belongs_to :hostdata
 end

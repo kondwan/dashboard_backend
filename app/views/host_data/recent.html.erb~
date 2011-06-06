@@ -11,11 +11,11 @@
   <body>
  
    <div style="position: absolute; left: 1120px; top: 68px; height: 400px; width:90px; padding 1em;" >
-            <div class="but "><a href="javascript:alert('Kudashboard')"><b><font color="white" size="4" face="arial">
+            <div class="but "><a href="/host_data/dashboard"><b><font color="white" size="4" face="arial">
             <center>Dashboard</center></font></b></a></div>
             
-            <div class="but "><a href="/host_data/refresh"><b><font color="white" size="4" face="arial">
-            <center>Acquire Data</center></font></b></a></div>
+            <div class="but "><a href="/host_data/index"><b><font color="white" size="4" face="arial">
+            <center>View Records</center></font></b></a></div>
             
             <div class="but "><a href="/hostname/list"><b><font color="white" size="4" face="arial">
             <center>Hostnames</center></font></b></a></div>
@@ -31,7 +31,7 @@
             <center>Update</center></font></b></a></div>
             <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="4" face="arial">
             <center>Records</center></font></b></a></div>
-            <div class="but "><a href="javascript:alert('taipezeni data')"><b><font color="white" size="4" face="arial">
+            <div class="but "><a href="/host_data/statistics"><b><font color="white" size="4" face="arial">
             <center>Statistics</center></font></b></a></div>
             <div class="but "><a href="javascript:alert('Tulukani')"><b><font color="white" size="4" face="arial">
             <center>Todays Data</center></font></b></a></div>
@@ -51,29 +51,24 @@
      <th>Updated on</th>
        <th> Created on</th>
       
-        <th>Delete</th>
+        
     
-    
-        <%@host_datas.each do |k| %><tr>
-	        <td><%= k.Host_id%></td>
+    <tr>
+        
 	      
-            <td><%=k.Total_diskpace -%></td>
-            <td><%=k.Used_diskpace -%></td>
-	        <td><%= k.Used_memory-%></td>
-	        <td><%= k.Free_memory-%></td>
-	      <td><%= k.Load_average %></td>
-	      <td><%= k.Mac_address %></td>
-	            
-	            
-	          
-	         
-           
-            <td><%= k.Date_updated.strftime("%d/%m/%y,%H:%M")-%></td>
-          <td color="gray"><%= k.Date_created.strftime("%d/%m/%y") -%></td>
+            <td><%=@recent.Host_id-%></td>
+            <td><%=@recent.Total_diskpace-%></td>
+            <td><%=@recent.Used_diskpace-%></td>
+            <td><%=@recent.Used_memory-%></td>
+            <td><%=@recent.Free_memory-%></td>
+            <td><%=@recent.Load_average-%></td>
+            <td><%=@recent.Mac_address-%></td>
+            <td><%=@recent.Date_created.strftime("%d/%m/%Y")-%></td>
+            <td><%=@recent.Date_updated.strftime("%d/%m/%Y-%H:%M")-%></td>
+            
           
-          <td><%= link_to 'Delete',{:action=>'delete',:controller =>'host_data',:id =>k.id}, :confirm =>
-              "Are you sure you want to delete this Client?" %></td>
-          <% end %>
+         
+          
   </tr>
   </table>
   

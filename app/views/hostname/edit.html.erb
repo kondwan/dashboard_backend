@@ -1,7 +1,19 @@
   <html>
   <body>
-  <b> Just Wait am trying to Structure myself a little bit!
-  am not yet available </b>
+  
+  
+  <%= form_tag :action=> 'update', :id=> @hostname %>
+  <p><label for"hostname_hostid">Host_Id</label>:
+  <%= text_field 'hostname','hostid'%></p>
+  <p><label for"hostname_hostname">HostName</label>:
+  <%= text_field 'hostname','hostname'%></p>
+  <p><label for"hostname_mac_address">Mac_address</label>:
+  <%= text_field 'hostname','mac_address'%></p>
+  <p><label for"hostname_ip_address'>Ip Address</label>:
+  <%= text_field 'hostname','ipaddress' %></p>
+  <%= submit_tag "Save Changes" %>
+  <%= end %>
+  <b> </b>
   </p>
   </body>
   </html>

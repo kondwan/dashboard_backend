@@ -24,6 +24,7 @@ background-color:#199;
 width:960px;
 -moz-border-radius:7px;
 text-shadow: 6px  4px 1px black;
+font-style:italic;
 
 }
 
@@ -42,6 +43,7 @@ font-family:"Your type face",Tahoma, sans serif;
 display:block;
 border-top-color:#280000;
 border-width:34px;
+font-style:italic;
 
 }
 h5 {
@@ -122,5 +124,18 @@ table {
 background-color:#120;
 -moz-border-radius:10px;
 width:1100px;
+}
+p4 {
+position:relative;
+left:32px;
+
+background-color:#199;
+width:82px;
+height:25px;
+padding:5px;
+border-style:groove;
+font-family:"Your Type face",Tahoma,sans serif;
+
+
 }
 

@@ -8,7 +8,9 @@ class HostDataController < ApplicationController
     end
     #displaying each item from the database
     
-    def hostnames
+    def show
+    
+      @host_data = HostData.find(params[:id])
     end
     
     def delete
@@ -22,12 +24,12 @@ class HostDataController < ApplicationController
     def statistics
   
       @host_data = HostData.count
-       @host_datas = HostData.find(:all, :conditions=>{:Date_created =>(Date.today)..(Date.today + 1.week)})
+       @host = HostData.find(:all, :conditions=>{:Date_created =>(Date.today)})
+       @last_update = HostData.find(:last, :order=>"Date_created")
     
     end
     def recent
-      @recent = HostData.find(params[:id])
-      redirect_to :action=>'recent'
+     @last_update = HostData.find(:last, :order=>"Date_created") 
     end
     def perweek
       
